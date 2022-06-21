@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //task1
+        // let links = document.getElementsByTagName("a");
+        // // console.log(links);
+        // window.onload = () => {
+        //     for (let i = 0; i < links.length; i++) {
+        //         if (links[i].classList.contains("open") && links[i].textContent === "Elzero") {
+        //             links[i].click();
+        //         } else {
+        //             console.log('no');
+        //         }
+
+        //     }
+        // }
+
+        // //========================================taask3=======
+        // let myp = document.getElementsByTagName("p")[0];
+        // console.log(myp);
+        // myp.remove();
+        // let element = document.getElementById("our-element");
+        // let div1 = document.createElement("div");
+        // let div2 = document.createElement("div");
+
+        // div1.textContent = "Start";
+        // div1.className = "start";
+        // div1.setAttribute("title", "Start Element", );
+        // div1.setAttribute("data-value", "Start");
+        // element.before(div1);
+        // div2.textContent = "end"
+        // div2.className = "end"
+        // div2.setAttribute("title", "end Element", )
+        // div2.setAttribute("data-value", "end")
+        // element.after(div2);
+        //===================task4============
+        //         let myComment = document.querySelector(".hello").nextSibling;
+        // let newline = myComment.nextSibling;
+        // console.log( newline.nextSibling);
+        //================task5==========
+        // let elements=document.getElementsByClassName("one");
+        // // console.log(elements);
+        // for(let i=0;i<elements.length;i++){
+
+        //     elements[i].onclick=function(){
+        //      console.log (  `This Is elements[i].tagName`); 
+        //     }
+        // }
+//         document.addEventListener("click", function (e) {
+//   console.log(`This Is ${e.target.tagName}`) // = outerHTML but with full element
+// });
+     
+
+    </script>
+    <style>
+        .assign {
+        text-align: center;
+        padding-top: 20px;
+      }
+      .assign input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+      }
+      .assign input:focus {
+        outline: none;
+        border-color: #ccc;
+      }
+      .assign [title="Current"] {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list h5 {
+        margin: 0 0 10px;
+        text-align: left;
+      }
+      .assign .classes-list div span {
+        background-color: #ff5722;
+        padding: 6px 10px 8px;
+        margin-right: 5px;
+        border-radius: 6px;
+        color: white;
+        display: inline-flex;
+      }
+    </style>
+</head>
+
+<body >
+      <!-- task1-->
+   <!-- <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>  -->
+
+
+   <!-- task2-->
+
+    <div class="assign">
+        <input type="text" class="classes-to-add" placeholder="Add Classes" />
+        <input type="text" class="classes-to-remove" placeholder="Remove Classes" />
+        <div class="element current" title="Current">Current Element</div>
+        <div class="classes-list">
+          <h5>Current Element Class Lists</h5>
+          <div></div>
+        </div>
+      </div> 
+
+    <!-- task3-->
+    <!-- <div id="our-element">Our Element</div>
+    <p class="remove">Paragraph</p> 
+    <br> -->
+
+  <!-- task4-->
+    <div>
+        <span>Hello</span>
+       <!-- We Need The Next Text Without Spaces-->
+        Elzero
+    </div>
+   
+ <!-- task5-->
+    <div class="one">div</div>
+    <span  class="one">span</span>
+    <p  class="one">paragragh</p>
+    <article  class="one">articles</article>
+    <section  class="one">section</section>
+
+
+
+  <script src="94_101.js"></script> 
+    <!-- <script src="94-101.js"></script> -->
+</body>
+
+</html>
